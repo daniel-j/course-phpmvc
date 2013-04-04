@@ -33,10 +33,10 @@
         <header id="header">
             <div id="banner">
                 <a href="index.php">
-                    
+                    <span class="site-title">phpmvc</span>
                 </a>
-                <p class="site-title">phpmvc</p>
-                <p class="site-slogan">Att koda ett PHP-baserat och MVC-inspirerat ramverk</p>
+                <br>
+                <span class="site-slogan">Att koda ett PHP-baserat och MVC-inspirerat ramverk</span>
             </div>
             <?=getHTMLForNavigation($navbar, "navbar")?>
         </header>

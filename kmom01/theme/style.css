@@ -15,7 +15,19 @@ body {
 }
 
 #above {
+  font-size: 11px;
+}
+
+#above #nav-kmom {
   
+}
+
+#header {
+  background-color: #697;
+}
+#header .site-title {
+  font-size: 32px;
+  color: black;
 }
 
 #main {
