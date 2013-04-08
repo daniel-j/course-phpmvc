@@ -18,10 +18,10 @@ $data['navkmom'] = array(
 
 // The contents of the navbar
 $data['navbar'] = array(
-  'index'         => array('text'=>'Me',  'url'=>'index.php'),
-  'redovisning'   => array('text'=>'Redovisning',  'url'=>'redovisning.php'),
-  'empty'         => array('text'=>'Tom sida', 'url'=>'empty.php'),
+  'index'         => array('text'=>'Me',  'url'=>'./'),
+  'redovisning'   => array('text'=>'Redovisning',  'url'=>'report.php'),
   'viewsource'    => array('text'=>'Källkod', 'url'=>'viewsource.php'),
+  'github'        => array('text'=>'Github', 'url'=>'https://github.com/daniel-j/course-phpmvc')
 );
 
 $data['style'] = "";

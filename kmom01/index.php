@@ -8,6 +8,9 @@ include("config.php");
 $data['title'] = "Om mig";
 $data['meta_description'] = "PHP MVC COURSE";
 $data['main'] = <<<EOD
+
+<h1>Me-sidan</h1>
+
 <p>Jag har programmerat JavaScript/HTML/CSS i åtta år och PHP/MySQL i fem.
 På senare tid har jag även använt Node.JS (javascript på servern) och de nya HTML5-API:erna samt CSS3 och ES5.
 Under kursens gång hoppas jag bli bättre på PHP och SQLite.</p>

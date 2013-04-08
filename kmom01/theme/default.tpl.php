@@ -30,34 +30,37 @@
             <?=getHTMLForKmomNavlinks($navkmom, "nav-kmom")?>
         </header>
 
-        <header id="header">
-            <div id="banner">
-                <a href="index.php">
-                    <span class="site-title">phpmvc</span>
-                </a>
-                <br>
-                <span class="site-slogan">Att koda ett PHP-baserat och MVC-inspirerat ramverk</span>
-            </div>
-            <?=getHTMLForNavigation($navbar, "navbar")?>
-        </header>
-        
-        <div id="main" role="main">
-            <?=$main?>
-        </div>
+        <div id="wrapper">
 
-        <footer id="footer">
-
-            <p>&copy; Daniel Jönsson, djazz.mine.nu</p>
+            <header id="header">
+                <div id="banner">
+                    <div class="site-title"><a href="index.php">phpmvc</a></div>
+                    
+                    <div class="site-slogan">Att koda ett PHP-baserat och MVC-inspirerat ramverk</div>
+                </div>
+                <?=getHTMLForNavigation($navbar, "navbar")?>
+            </header>
             
-            <p>Tools: 
+            
+            <div id="main" role="main">
+                <?=$main?>
+            </div>
+
+            <footer id="footer">
+
+                &copy; Daniel Jönsson, djazz.mine.nu
+                <br>
+            
                 <a href="http://validator.w3.org/check/referer">html5</a>
                 <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">css3</a>
                 <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css21">css21</a>
                 <a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">unicorn</a>
                 <a href="http://validator.w3.org/checklink?uri=<?=$currentUrl?>">links</a>
                 <a href="http://validator.w3.org/i18n-checker/check?uri=<?=$currentUrl?>">i18n</a>
-            </p>
-        </footer>
+                
+            </footer>
+
+        </wrapper>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
