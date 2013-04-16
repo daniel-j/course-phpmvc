@@ -11,3 +11,7 @@ Moment 1, Skicka alla requester till index.php:
 
 Moment 2, Lydia: Grundstrukturen i index.php:
 	Koperade in mos kod och bytte ut allt som heter Lydia till Cloudchaser. Bytte även ut lite require mot require_once. Denna delen var lätt att följa och förstå.
+
+Moment 3, Lydia: Frontcontroller route:
+	Skrev egen kod för att hantera controller-länkar, som mos rekommenderade. Reflection i PHP har jag aldrig använt innan, undrar hur andra MVC-ramverk gör?
+
