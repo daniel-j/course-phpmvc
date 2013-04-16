@@ -1,5 +1,21 @@
 <?php
-echo "<h1>I'm Cloudchaser - index.php</h1>";
-echo "<p>You are most welcome!</p>";
-echo "<p>REQUEST_URI - " . htmlentities($_SERVER['REQUEST_URI']) . "</p>";
-echo "<p>SCRIPT_NAME - " . htmlentities($_SERVER['SCRIPT_NAME']) . "</p>";
+
+//
+// PHASE: BOOTSTRAP
+//
+define('CLOUDCHASER_INSTALL_PATH', dirname(__FILE__));
+define('CLOUDCHASER_SITE_PATH', CLOUDCHASER_INSTALL_PATH . '/site');
+
+require_once CLOUDCHASER_INSTALL_PATH.'/src/CCloudchaser/bootstrap.php';
+
+$cc = CCloudchaser::Instance();
+
+//
+// PHASE: FRONTCONTROLLER ROUTE
+//
+$cc->FrontControllerRoute();
+
+//
+// PHASE: THEME ENGINE RENDER
+//
+$cc->ThemeEngineRender();
