@@ -18,5 +18,11 @@ Moment 3, Lydia: Frontcontroller route:
 Moment 4, Lydia: Theme Engine Render:
 	Jag modifierade default-templaten så att den hämtar language och character_encoding från config. 
 
-Moment 5:
+Moment 5, Lydia: Vilken är webbplatsens base_url?
 	Fick ändra $scriptName till $this->script_name. Upptäckte att rewrite mot /index/arg1/arg2 inte fungerar på localhost av någon anledning.
+
+Moment 6, Lydia: Låt ramverket skapa interna länkar:
+	Var tvungen att ta bort $cc->data['main'] från themes/core/functions.php då den skrev över min developer-controller. Gjorde en create_url() för mos har ingen, fast det står det i tutorialen, jag har inte lyckats hitta den i alla fall. Gjorde min egna CreateLink som skapar A-taggar från en lokal länk (använder CreateUrl) och en länktext.
+
+Moment 7, Lydia: Städa och publicera koden på github:
+	Har aldrig använt taggar förut på github.

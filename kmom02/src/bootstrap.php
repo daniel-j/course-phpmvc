@@ -9,13 +9,20 @@
  * Enable auto-load of class declarations.
  */
 function autoload($aClassName) {
-  $classFile = "/src/{$aClassName}/{$aClassName}.php";
-  $file1 = CLOUDCHASER_INSTALL_PATH . $classFile;
-  $file2 = CLOUDCHASER_SITE_PATH . $classFile;
+  $classFile = "{$aClassName}/{$aClassName}.php";
+  
+  $file1 = CLOUDCHASER_SITE_PATH . "/" . $classFile;
+  $file2 = CLOUDCHASER_INSTALL_PATH . "/src/" . $classFile;
+  
   if(is_file($file1)) {
+  	//echo "Autoload ".$file1."<br>";
     require_once $file1;
-  } elseif(is_file($file2)) {
+  } else if(is_file($file2)) {
+  	//echo "Autoload ".$file2."<br>";
     require_once $file2;
+  } else {
+  	echo "Unable to autoload ".$aClassName.".";
   }
 }
-spl_autoload_register('autoload');
+
+spl_autoload_register('autoload', true);

@@ -7,6 +7,27 @@
 class CRequest {
 
   /**
+   * Member variables
+   */
+  public $cleanUrl;
+  public $querystringUrl;
+
+  /**
+   * Constructor
+   *
+   * Decide which type of url should be generated as outgoing links.
+   * default      = 0      => index.php/controller/method/arg1/arg2/arg3
+   * clean        = 1      => controller/method/arg1/arg2/arg3
+   * querystring  = 2      => index.php?q=controller/method/arg1/arg2/arg3
+   *
+   * @param boolean $urlType integer 
+   */
+  public function __construct($urlType=0) {
+    $this->cleanUrl       = $urlType === 1 ? true : false;
+    $this->querystringUrl = $urlType === 2 ? true : false;
+  }
+
+  /**
    * Init the object by parsing the current url request.
    */
   public function Init($baseUrl = null) {
@@ -62,5 +83,26 @@ class CRequest {
     $url .= $_SERVER["SERVER_NAME"] . $serverPort . htmlspecialchars($_SERVER["REQUEST_URI"]);
     return $url;
   }
+
+  /**
+   * Create a url in the way it should be created.
+   * @return string The created url
+   */
+  public function CreateUrl($url=null) {
+    $prepend = $this->base_url;
+    if($this->cleanUrl) {
+      ;
+    } elseif ($this->querystringUrl) {
+      $prepend .= 'index.php?q=';
+    } else {
+      $prepend .= 'index.php/';
+    }
+    return $prepend . rtrim($url, '/');
+  }
+
+  public function CreateLink($url, $text) {
+    return "<a href=\"".$this->CreateUrl($url)."\">".$text."</a>";
+  }
+  
 
 }

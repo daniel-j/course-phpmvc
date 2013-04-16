@@ -7,13 +7,15 @@
 </head>
 <body>
 	<div id="header">
+		<a href="http://psalm-sinatra.deviantart.com/art/Cloud-Chaser-318093871" target="_blank"><img src="<?="{$themeUrl}/img/cloudchaser_cloud.png"?>" id="header-img"></a>
 		<?=$header?>
 	</div>
 	<div id="main" role="main">
+		<?=get_mainmenu()?>
 		<?=$main?>
-		<?=get_debug()?>
 	</div>
 	<div id="footer">
+		<hr>
 		<?=$footer?>
 	</div>
 </body>

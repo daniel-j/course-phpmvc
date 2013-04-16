@@ -33,7 +33,7 @@ class CCloudchaser implements ISingleton {
    */
   public function FrontControllerRoute() {
     // Take current url and divide it in controller, method and parameters
-    $this->request = new CRequest();
+    $this->request = new CRequest($this->config['url_type']);
     $this->request->Init($this->config['base_url']); // Why isn't this a singleton or constructor?
     $controller = $this->request->controller;
     $method     = $this->request->method;
@@ -44,6 +44,8 @@ class CCloudchaser implements ISingleton {
     $controllerEnabled = false;
     $className         = false;
     $classExists       = false;
+
+
 
     if($controllerExists) {
       $controllerEnabled = ($this->config['controllers'][$controller]['enabled'] == true);
