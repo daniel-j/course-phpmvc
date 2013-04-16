@@ -73,13 +73,27 @@ class CCloudchaser implements ISingleton {
   }
 
   /**
-   * Theme Engine Render, renders the views using the selected theme.
+   * ThemeEngineRender, renders the reply of the request.
    */
   public function ThemeEngineRender() {
-    echo "<h1>I'm CCloudchaser::ThemeEngineRender</h1><p>You are most welcome. Nothing to render at the moment</p>";
-    echo "<h2>The content of the config array:</h2><pre>", print_r($this->config, true) . "</pre>";
-    echo "<h2>The content of the data array:</h2><pre>", print_r($this->data, true) . "</pre>";
-    echo "<h2>The content of the request array:</h2><pre>", print_r($this->request, true) . "</pre>";
+    // Get the paths and settings for the theme
+    $themeName    = $this->config['theme']['name'];
+    $themePath    = CLOUDCHASER_INSTALL_PATH . "/themes/{$themeName}";
+    $themeUrl      = "themes/{$themeName}";
+
+    // Add stylesheet path to the $cc->data array
+    $this->data['stylesheet'] = "{$themeUrl}/style.css";
+
+    // Include the global functions.php and the functions.php that are part of the theme
+    $cc = &$this;
+    $functionsPath = "{$themePath}/functions.php";
+    if(is_file($functionsPath)) {
+      include $functionsPath;
+    }
+
+    // Extract $cc->data to own variables and handover to the template file
+    extract($this->data);
+    include("{$themePath}/default.tpl.php");
   }
 
 }

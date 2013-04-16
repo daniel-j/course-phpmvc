@@ -42,3 +42,11 @@ $cc->config['language'] = 'en';
 $cc->config['controllers'] = array(
   'index'     => array('enabled' => true,'class' => 'CCIndex'),
 );
+
+/**
+* Settings for the theme.
+*/
+$cc->config['theme'] = array(
+  // The name of the theme in the theme directory
+  'name'    => 'core',
+);

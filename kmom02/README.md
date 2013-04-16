@@ -15,3 +15,5 @@ Moment 2, Lydia: Grundstrukturen i index.php:
 Moment 3, Lydia: Frontcontroller route:
 	Skrev egen kod för att hantera controller-länkar, som mos rekommenderade. Reflection i PHP har jag aldrig använt innan, undrar hur andra MVC-ramverk gör?
 
+Moment 4, Lydia: Theme Engine Render:
+	Jag modifierade default-templaten så att den hämtar language och character_encoding från config. 
