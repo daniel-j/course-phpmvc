@@ -17,3 +17,4 @@ function get_debug() {
   $html .= "<hr><p>The content of the request array:</p><pre>" . htmlentities(print_r($cc->request, true)) . "</pre>";
   return $html;
 }
+

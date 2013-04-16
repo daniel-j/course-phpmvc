@@ -17,3 +17,6 @@ Moment 3, Lydia: Frontcontroller route:
 
 Moment 4, Lydia: Theme Engine Render:
 	Jag modifierade default-templaten så att den hämtar language och character_encoding från config. 
+
+Moment 5:
+	Fick ändra $scriptName till $this->script_name. Upptäckte att rewrite mot /index/arg1/arg2 inte fungerar på localhost av någon anledning.

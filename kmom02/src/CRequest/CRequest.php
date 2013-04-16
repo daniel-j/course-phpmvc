@@ -9,7 +9,7 @@ class CRequest {
   /**
    * Init the object by parsing the current url request.
    */
-  public function Init() {
+  public function Init($baseUrl = null) {
     // Take current url and divide it in controller, method and arguments
     if (isset($_GET['q'])) {
       $query = $_GET['q'];
@@ -39,6 +39,28 @@ class CRequest {
     $this->controller   = $controller;
     $this->method       = $method;
     $this->arguments    = $arguments;
+
+    // Prepare to create current_url and base_url
+    $currentUrl = $this->GetCurrentUrl();
+    $parts      = parse_url($currentUrl);
+    $baseUrl    = !empty($baseUrl) ? $baseUrl : "{$parts['scheme']}://{$parts['host']}" . (isset($parts['port']) ? ":{$parts['port']}" : '') . rtrim(dirname($this->script_name), '/');
+    
+    // Store it
+    $this->base_url     = rtrim($baseUrl, '/') . '/';
+    $this->current_url  = $currentUrl;
+  }
+
+  /**
+   * Get the url to the current page. 
+   */
+  public function GetCurrentUrl() {
+    $url = "http";
+    $url .= (@$_SERVER["HTTPS"] == "on") ? 's' : '';
+    $url .= "://";
+    $serverPort = ($_SERVER["SERVER_PORT"] == "80") ? '' :
+    (($_SERVER["SERVER_PORT"] == 443 && @$_SERVER["HTTPS"] == "on") ? '' : ":{$_SERVER['SERVER_PORT']}");
+    $url .= $_SERVER["SERVER_NAME"] . $serverPort . htmlspecialchars($_SERVER["REQUEST_URI"]);
+    return $url;
   }
 
 }
