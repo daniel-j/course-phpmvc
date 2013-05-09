@@ -66,7 +66,7 @@ function get_debug() {
     $html .= "<p>Database made the following queries.</p><pre>" . implode('<br/><br/>', $cc->db->GetQueries()) . "</pre>";
   }    
   if(isset($cc->config['debug']['cloudchaser']) && $cc->config['debug']['cloudchaser']) {
-    $html .= "<hr><h3>Debuginformation</h3><p>The content of CLydia:</p><pre>" . htmlent(print_r($cc, true)) . "</pre>";
+    $html .= "<hr><h3>Debuginformation</h3><p>The content of CCloudChaser:</p><pre>" . htmlent(print_r($cc, true)) . "</pre>";
   }    
   return $html;
 }
