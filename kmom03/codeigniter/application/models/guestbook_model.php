@@ -7,7 +7,7 @@ class Guestbook_model extends CI_Model {
   }
  
   public function get_posts() {
-    $this->db->select('*')->from('posts')->order_by('id', 'desc');
+    $this->db->select('*')->from('ci_posts')->order_by('id', 'desc');
     $query = $this->db->get();
     return $query->result_array();
   }
@@ -19,7 +19,7 @@ class Guestbook_model extends CI_Model {
     );
     $data = $this->security->xss_clean($data);
  
-   return $this->db->insert('posts', $data);
+   return $this->db->insert('ci_posts', $data);
   }
  
 }
