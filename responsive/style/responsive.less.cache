@@ -1,0 +1,106 @@
+a:4:{s:4:"root";s:15:"responsive.less";s:8:"compiled";s:1654:"body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body {
+  margin: 0px;
+  background-color: #F99;
+}
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #9FF;
+}
+header#top {
+  background-color: #9F9;
+  padding: 10px;
+}
+header#top h1 {
+  margin: 0px;
+}
+#navigation {
+  display: inline;
+  float: left;
+  width: 16.666666666667%;
+  margin: 0 0%;
+  background-color: #99F;
+}
+#maincolumn {
+  display: inline;
+  float: left;
+  width: 58.333333333333%;
+  margin: 0 0%;
+  background-color: white;
+}
+#sidebar {
+  display: inline;
+  float: left;
+  width: 25%;
+  margin: 0 0%;
+  background-color: #FF9;
+}
+#navigation,
+#maincolumn,
+#sidebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+footer#bottom {
+  background-color: #F9F;
+  clear: left;
+  padding: 10px;
+}
+@media screen and (max-width: 1000px) {
+  #navigation {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+  }
+  #navigation nav ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  #navigation nav ul li {
+    display: inline;
+    padding-right: 15px;
+  }
+  #maincolumn {
+    display: inline;
+    float: left;
+    width: 70.833333333333%;
+    margin: 0 0%;
+  }
+  #sidebar {
+    display: inline;
+    float: left;
+    width: 29.166666666667%;
+    margin: 0 0%;
+  }
+}
+@media screen and (max-width: 720px) {
+  #maincolumn,
+  #sidebar {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #navigation nav ul li {
+    display: block;
+    padding-bottom: 15px;
+  }
+}
+";s:5:"files";a:1:{s:74:"/host/Users/Daniel/Kodning/bth-www/phpmvc/responsive/style/responsive.less";i:1367932288;}s:7:"updated";i:1367933224;}
