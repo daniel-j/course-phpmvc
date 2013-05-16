@@ -2,7 +2,7 @@
 /**
  * A form for editing the user profile.
  * 
- * @package LydiaCore
+ * @package CloudchaserCore
  */
 class CFormUserProfile extends CForm {
 

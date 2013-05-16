@@ -2,7 +2,7 @@
 /**
 * A form for creating a new user.
 * 
-* @package LydiaCore
+* @package CloudchaserCore
 */
 class CFormUserCreate extends CForm {
 

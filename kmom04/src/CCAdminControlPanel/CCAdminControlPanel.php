@@ -2,7 +2,7 @@
 /**
  * Admin Control Panel to manage admin stuff.
  * 
- * @package LydiaCore
+ * @package CloudchaserCore
  */
 class CCAdminControlPanel extends CObject implements IController {
 

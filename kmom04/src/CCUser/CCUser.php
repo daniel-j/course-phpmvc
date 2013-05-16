@@ -2,7 +2,7 @@
 /**
  * A user controller  to manage login and view edit the user profile.
  * 
- * @package LydiaCore
+ * @package CloudchaserCore
  */
 class CCUser extends CObject implements IController {
 

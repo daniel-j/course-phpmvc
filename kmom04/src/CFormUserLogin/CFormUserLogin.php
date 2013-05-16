@@ -2,7 +2,7 @@
 /**
  * A form to login the user profile.
  * 
- * @package LydiaCore
+ * @package CloudchaserCore
  */
 class CFormUserLogin extends CForm {
 

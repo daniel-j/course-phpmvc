@@ -2,7 +2,7 @@
 /**
  * A utility class to easy creating and handling of forms
  * 
- * @package LydiaCore
+ * @package CloudchaserCore
  */
 class CFormElement implements ArrayAccess{
 
