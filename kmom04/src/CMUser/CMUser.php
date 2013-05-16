@@ -205,7 +205,6 @@ class CMUser extends CObject implements IHasSQL, ArrayAccess {
    */
   public function ChangePassword($plain) {
     $password = $this->CreatePassword($plain);
-    print_r($password);
     $this->db->ExecuteQuery(self::SQL('update password'), array($password['algorithm'], $password['salt'], $password['password'], $this['id']));
     return $this->db->RowCount() === 1;
   }
