@@ -165,6 +165,9 @@ Vad saknar du i ditt ramverk, vad borde funnits med, har du en att-göra-lista?<
 	Del 3: Ger upp efter några timmar av att få igång Lydia enligt tutorialen. Jag får massor med PHP-felmeddelanden. Mos svarade i chatten: "däremot har jag nog inte så mycket fokus på att andra kan använda det (än). Men jag har iallafall en installationsfas numer :)". Jaha? Så, jag fortsatte med delen och stötte på lite mindre problem. Jag implementerade Mycontroller och gjorde en blogg, gästbok och en om mig sida. Menyn hade jag redan gjort sedan tidigare, så den var ganska lätt att implementera enligt tutorialen.<br>
 	Del 4: Se ovan om ReflectionClass.
 </p>
+<p>
+	Färdiga ramverket: <a href="https://github.com/daniel-j/cloudchaser-cmf">https://github.com/daniel-j/cloudchaser-cmf</a>
+</p>
 
 EQD;
    }
