@@ -148,7 +148,7 @@ Beskriv ditt grundtema, hur tänkte du när du gjorde det, gjorde du några utsv
 	Del 5: Min template/mitt tema skiljer sig från Lydias så det blev inte så mycket ändringar i den här delen.
 </p>
 
-<h2>Kmom07: CSS-ramverk och grid layout</h2>
+<h2>Kmom07: Färdigställ och produktifiera ramverket</h2>
 <h3>Vad tyckte du om att göra ramverket "självdokumenterande"?
 Skriv en kort summering av ditt ramverk, är det plain Lydia eller har det några extra features?
 Beskriv din testinstallation, gick den smidigt att göra eller var det något som krånglade, borde ramverket varit annorlunda?
