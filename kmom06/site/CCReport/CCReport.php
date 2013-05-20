@@ -129,7 +129,7 @@ Läste du materialet om XSS?</h3>
 	Del 5: Vad bra att HTML-koden rensas när man visar sidan, så att originalet finns i databasen. Fick uppdatera CCBlog så att filtret funkar där också.<br><br>
 </p>
 
-<h2>Kmom06: </h2>
+<h2>Kmom06: CSS-ramverk och grid layout</h2>
 <h3>Vad tycker du om gridbaserad layout?
 Vad tycker du om CSS-ramverk i allmänhet och vilka tidigare erfarenheter har du av dem?
 Vad tycker du om LESS, lessphp och Semantic.gs?
