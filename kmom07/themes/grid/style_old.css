@@ -1,0 +1,143 @@
+/** 
+* Description: Core theme for Cloudchaser
+*/
+
+/**
+* Structure
+*/
+html{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+   background-color:#ded8f6;
+   font: 1em Verdana, Arial, Helvetica, sans-serif;
+   padding: 20px;
+}
+
+a {
+	color: #73b6e2;
+}
+a:hover {
+	color: #88bfe2;
+}
+hr {
+	border-color: #8273bd;
+	border-style: solid;
+}
+
+#header,
+#main,
+#footer {
+   margin:0 auto;
+   width:970px;
+   background-color:#fff;
+   padding: 1em;
+}
+#header h1 {
+	font-size: 36px;
+	margin-bottom: 0px;
+}
+#header h1 a {
+	text-decoration: none;
+}
+#header-img {
+	position: relative;
+	right: -50px;
+	top: -30px;
+	float: right;
+}
+
+#mainmenu {
+	padding-bottom: 8px;
+	border-bottom: 2px solid #8273bd;
+	/*clear: both;*/
+}
+#mainmenu ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#mainmenu li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+#mainmenu li.current {
+	font-weight: bold;
+}
+#mainmenu li a {
+	display: block;
+	padding: 0.2em;
+
+	font-size: 1.1em;
+	color: #249ce5;
+	text-decoration: none;
+}
+#mainmenu li a:hover {
+	text-decoration: underline;
+}
+
+#mainmenu > ul > li > ul {
+	display: none;
+	position: absolute;
+	background-color: white;
+	border: 2px solid #8273bd;
+	border-top: none;
+	padding: 5px;
+	z-index: 1000;
+}
+#mainmenu > ul > li:hover > ul {
+	display: block;
+}
+#mainmenu > ul > li > ul > li {
+	display: block;
+}
+
+#mainmenu.alternate ul {
+	
+}
+#mainmenu.alternate ul li {
+	background-color: #09F;
+	-webkit-transition: all 1s ease-in-out;
+	font-size: 18px;
+}
+
+#mainmenu.alternate ul li:nth-child(2n) {
+	background-color: hotpink;
+}
+#mainmenu.alternate ul li a {
+	padding: 10px;
+	color: white;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+	-webkit-transition: all .2s ease-in-out;
+	
+}
+#mainmenu.alternate > ul > li:hover {
+	/*-webkit-transform: scale(1,1);/*rotateZ(360deg) skew(10deg, 9deg);*/
+	z-index: 1;
+	background-color: #06C;
+}
+
+#mainmenu.alternate > ul > li:nth-child(2n):hover {
+	background-color: deeppink;
+}
+#mainmenu.alternate ul li.current {
+	background-color: transparent;
+}
+#mainmenu.alternate ul li.current a {
+	color: black;
+}
+#mainmenu.alternate > ul > li:hover > a {
+	color: #6F0;
+}
+
+#userinfo {
+	clear: right;
+	float: right;
+	margin-top: -15px;
+}
+
+.validation-failed{border:2px solid red;}
+.validation-message{color:red;font-size:smaller;}

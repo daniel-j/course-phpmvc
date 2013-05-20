@@ -139,11 +139,21 @@ Beskriv ditt grundtema, hur tänkte du när du gjorde det, gjorde du några utsv
 </p>
 
 <h2>Kmom07: CSS-ramverk och grid layout</h2>
-<h3></h3>
+<h3>Vad tyckte du om att göra ramverket "självdokumenterande"?
+Skriv en kort summering av ditt ramverk, är det plain Lydia eller har det några extra features?
+Beskriv din testinstallation, gick den smidigt att göra eller var det något som krånglade, borde ramverket varit annorlunda?
+Vad saknar du i ditt ramverk, vad borde funnits med, har du en att-göra-lista?</h3>
 <p>
-	
-	Del 1: Okej det gick ganska fort där, stötte inte på några problem förutom att jag var tvungen att göra så att CMModules ignorerar mappnamnen "." och "..".
-	Del 2: 
+	Jag tycker det var häftigt att php kan självdokumentera sig själv med ReflectionClass. Ett smart och enkelt sätt att få en överblick av klasserna i ramverket.<br>
+	Det är väl ungefär 70% omodifierad Lydia-kod i mitt ramverk, pga. att tutorialerna varit ofullständiga och gav felmeddelanden, så då var det enklast att kopiera hela filer, för jag visste inte var mos hade ändrat och vad jag missade.<br>Om jag får tid över skulle jag kunna lägga in lite extra features och finjusteringar.<br>
+	Jag har inte gjort någon installationsfas, utan man får manuellt gå till module/install och user/create, logga in, och sedan module/install igen om man vill ha exempelinlägg i bloggen.<br>
+	Som jag sa, det saknas en snygg installationsfas a.l.a. WordPress. Jag har inte kollat på hur senaste Lydia gör det. En annan grej som saknas är att skydda mot att anonyma användare kan skapa content, utan att vara inloggade.
+	</p>
+	<p>
+	Del 1: Okej det gick ganska fort där, stötte inte på några problem förutom att jag var tvungen att göra så att CMModules ignorerar mappnamnen "." och "..".<br>
+	Del 2: Tror jag har fått installationsfasen att fungera, gröna "flashes" visas. Klonade ner senaste lydia och installationsprocessen gick smärtfritt. Tyvärr så blir det en del felmeddelanden på på olika sidor i Lydia.<br>
+	Del 3: Ger upp efter några timmar av att få igång Lydia enligt tutorialen. Jag får massor med PHP-felmeddelanden. Mos svarade i chatten: "däremot har jag nog inte så mycket fokus på att andra kan använda det (än). Men jag har iallafall en installationsfas numer :)". Jaha? Så, jag fortsatte med delen och stötte på lite mindre problem. Jag implementerade Mycontroller och gjorde en blogg, gästbok och en om mig sida. Menyn hade jag redan gjort sedan tidigare, så den var ganska lätt att implementera enligt tutorialen.<br>
+	Del 4: Se ovan om ReflectionClass.
 </p>
 
 
